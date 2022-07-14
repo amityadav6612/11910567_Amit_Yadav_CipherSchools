@@ -1,0 +1,31 @@
+<form name="movieForm" action="" method="POST">
+
+  <table>
+    <tr>
+      <td colspan="2"> Post New Movie</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td> Enter Movie ID </td>
+      <td> <input type="text" name="movieid" [(ngModel)]="movieid" placeholder="Enter movie id here "/> </td>
+    </tr>
+
+
+    <tr>
+      <td> Enter Movie Name </td>
+      <td> <input type="text" name="moviename" [(ngModel)]="moviename" placeholder="Enter movie name here "/> </td>
+    </tr>
+
+    <tr>
+      <td> Enter Movie Description </td>
+      <td> <input type="text" name="moviedesc" [(ngModel)]="moviedesc" placeholder="Enter movie Description  here "/> </td>
+    </tr>
+
+    <tr>
+      <td>  <button type="submit" value="Submit" (click)="saveMovie()">Submit </button> </td>
+    </tr>
+
+  </table>
+
+</form>
